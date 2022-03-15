@@ -1,0 +1,578 @@
+*{
+    margin: 0 ; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NanumSquare';
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none; 
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cb{
+    clear: both;
+}
+.cf:after{
+    content: ''; 
+    display: block; 
+    clear: both;
+}
+
+
+/* 전체 레이아웃 */
+#wrap{
+        text-align: center;
+    }
+
+.header-top{
+    width: 100%;
+    height: 120px;
+    background-color: #665d53;
+   
+    
+   
+}
+#footer{
+    width: 100%; 
+    height: 150px; 
+    background:#252525;
+    position: relative;
+}
+
+#footer-info{
+height: 160px;
+background:#252525;
+width: 100%;
+}
+.w1280{
+     max-width:1280px;
+     margin:auto;
+     width:100%;
+    }
+
+/* header */
+
+.banner{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 20px;
+    display: block;
+    
+   
+}
+.banner2{
+    color: #fff;
+    opacity: 0.5;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.checkbox{
+    position: absolute;
+    right: 20%;
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+    top: 90px;
+}
+.check a{
+    position: absolute;
+    right: 19.2%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    top: 91px;
+    font-weight: 600;
+}
+#header{
+    width: 100%; 
+    height: 940px; 
+
+    }
+
+
+
+#header-nav{
+    background: url(./img/0c2a047f-c6fb-4b0b-b0a0-0ff07470df38.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    list-style: none; 
+    clear: both;
+    
+}
+
+
+#content2{
+height: 950PX;
+background-color: rgb(255, 138, 138);
+width: 100%;
+
+}
+
+
+
+
+
+/* title 설정*/
+
+   #title{
+    position:absolute;
+    width: 1200px;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+.h1{
+    font-family: "NanumMyeongjo", "나눔 명조", "MalgunGothic", "맑은 고딕" , Arial, sans-serif;
+    border:2px solid #fff;
+    font-size: 24px;
+    display: inline-block; 
+    padding: 12px 15px;
+    color: #fff;
+}
+.h2{
+    color: #fff;
+    display: block; 
+    font-size: 65px;
+    margin-top: 45px;
+    text-align: center;
+    font-family: "NanumMyeongjo", "나눔 명조", "MalgunGothic", "맑은 고딕" , Arial, sans-serif;
+}
+.h3{
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/* 네비설정 */
+#nav{
+    width:100%;
+    height: 80px;
+    overflow: hidden;
+    transition: all 0.5s;
+    color: rgb(255, 255, 255);
+    z-index: 99;
+    background:linear-gradient(#e9e9e900 80px,#EFEFEF 50px);
+  
+}
+#nav:hover{
+    height: 480px; 
+    background:linear-gradient(#ffffff 80px,#EFEFEF 50px) ; 
+    color: #000;
+    }
+
+/* util설정 */
+
+/* .gnb{
+    /* width: 100%; */
+ */
+
+.inner{
+    width: 100%;
+}
+
+.logo a{
+    float: left;
+    font-size: 30px;
+    border: 1px solid #69090A;
+    background: #69090A;
+    padding: 23px;
+    display: block;
+    height: 80px;
+   
+}
+
+
+.util li{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.util li a{
+    color: rgb(189, 189, 189);
+}
+
+.util li a:hover{
+    color: #69090A;
+}
+.popup label{
+    color:rgb(189, 189, 189);
+}
+.popup input{
+    display: none;
+}
+.popup > label{
+    cursor: pointer; 
+}
+
+.popup > label:after{
+    content: '▼';
+    color: rgb(197, 197, 197);
+    margin-left:0.5em;
+}
+
+.popup > [type="radio"]:checked +label:after{
+    content: "▲";
+}
+
+
+/* gnb 설정 */
+.gnb li a:hover{
+        color: #69090A;
+    }
+
+.gnb li ul a span:hover{
+    color: #69090A;}
+
+/* .gnb{
+    /* max-width: 1280px; */
+    /* margin:auto; */
+    /* position: relative; */
+    /* z-index: 13; */
+     
+
+.gnb li a{  
+    text-align: center;  
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+.gnb li{
+    text-align: center;
+    width: auto;
+    height: auto;
+   font-weight: 700;
+    
+}
+.gnb li ul{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.gnb li ul a{
+    color:#5a5a5a;
+}
+
+.gnb .depth2 .line{
+    border-left:1px solid rgb(197, 197, 197);;
+}
+.gnb .depth2 li{
+    width: 100%;
+    text-align: left;
+    line-height: 30px;
+}
+
+.gnb li ul a span{
+font-size: 13px;
+color: #666;
+margin-left: 10px;
+}
+
+.dt{
+   
+    display: inline-block;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight:bold;
+    margin: 30px 30px;
+ 
+}
+/* gnb 초기설정
+ .gnb{
+    max-width:1400px; 
+    margin:auto; 
+    position: relative;
+    z-index: 13;
+    }
+
+.gnb a{  
+    text-align: center;  
+    text-decoration: none;
+}
+
+.gnb li{
+    text-align: center;
+    width:14%; 
+    line-height: 28px; 
+    font-weight: bold;
+    */
+
+
+/* .util li{
+    display: inline-block;
+    font-size: 15px; 
+    width: 30px;
+    text-decoration: none;
+    color: #fff;
+} */
+/* 햄버거 메뉴 설정 */
+
+:root{
+    --primary-color:rgba(85, 1, 1, 0.75);
+    --secondary-color:rgba(116, 0, 0, 0.9);
+    --overlay-color:#2c0101cc;
+    --menu-speed:0.75s
+
+}
+.menu-wrap{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1;
+}
+.menu-wrap .toggler{
+    position: absolute;
+    top: 125px;
+    left:1423px;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+.menu-wrap .hamburger{
+    position: absolute;
+    top:126px;
+    left: 1418px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* hamburger line */
+.menu-wrap .hamburger > div{
+    position: relative;
+    width: 80%;
+    height: 2px;
+    background: rgb(202, 202, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.menu-wrap .hamburger > div:before, 
+.menu-wrap .hamburger > div:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 2px;
+    width: 100%;
+    background: inherit;
+    top: -10px;
+}
+
+.menu-wrap .hamburger > div:after{
+    top: 10px;
+}
+
+.menu-wrap .toggler:checked+ .hamburger > div{
+    transform: rotate(135deg);
+}
+.menu-wrap .toggler:checked+ .hamburger > div:before, 
+.menu-wrap .toggler:checked+ .hamburger > div:after{
+    top: 0;
+    transform: rotate(90deg);
+}
+.menu-wrap .toggler:checked:hover+.hamburger>div{
+    transform: rotate(225deg);
+}
+/* show menu */
+.menu-wrap .toggler:checked~.menu{
+    visibility: visible;
+
+}
+.menu-wrap .toggler:checked~.menu>div{
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+}
+.menu-wrap .toggler:checked~.menu>div>div{
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+}
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.menu-wrap .menu>div{
+    background: var(--overlay-color);
+    width: 200vw;
+    height: 200vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex:none;
+    transform: scale(0);
+   
+    transition: all 0.4s ease;
+}
+.menu-wrap .menu>div>div{
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.menu-wrap .menu>div>div>ul>li{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.menu-wrap .menu>div>div>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+.menu-wrap .menu>div>div>ul>li>a:hover{
+    color: var(--secondary-color);
+}
+/* 햄버거 초기 버전 
+.menu-wrap{
+    position: fixed; 
+    top: 5px; 
+    left: 1600px; 
+    z-index: 1;
+}
+.menu-wrap .toggler{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger{
+    position: absolute;
+    top: 5px;
+    left: -160px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background:rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.menu-wrap .toggler:checked~.menu{
+    visibility: visible;
+
+}
+.menu-wrap .toggler:checked~.menu>div{
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+}
+/* 메뉴배경 위치 조정 */
+/* .menu-wrap .toggler:checked~.menu>div>div{
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+} */
+/* 메뉴배경 위치 조정 */
+/* .menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+} */
+/* 메뉴배경 */
+/* .menu-wrap .menu>div{
+    background: var(--overlay-color);
+    width: 200vw;
+    height: 200vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex:none;
+    transform: scale(0);
+   
+    transition: all 0.4s ease;
+} */
+/* 메뉴글씨 속성 및 속도 */
+/* .menu-wrap .menu>div>div{
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+} */
+/* 메뉴 li 스타일 */
+/* .menu-wrap .menu>div>div>ul>li{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+} */
+/* 메뉴글씨 */
+/* .menu-wrap .menu>div>div>ul>li>a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.4s ease;
+} */
+/* 메뉴 호버 글씨 */
+/* .menu-wrap .menu>div>div>ul>li>a:hover{
+    color: var(--secondary-color);
+} */ 
+/* hover:focus */
+
+.control{
+    position: absolute;
+    left: 0px;
+    bottom: -260px;
+    height: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.control .sc{
+    color: #fff;
+    position: absolute;
+    left: 0;
+}
+.control .remote{
+    color: #fff;
+    position: absolute;
+    left: 590px;
+}
+.control .page{
+    color: #fff;
+    position: absolute;
+    right:-20px;
+}
